@@ -21,10 +21,10 @@
     }
     </style>
 </head>
-<body class="poppins-regular px-20 bg-[#F4F7FF]">
+<body class="poppins-regular max-w-full bg-[#F4F7FF] px-10">
     <header>
         <!--Navbar-->
-        <div class="navbar bg-base-100 shadow-sm rounded-lg mb-4">
+        <div class="navbar bg-base-100 shadow-sm rounded-lg mb-2">
             <div class="flex-1">
                 <a class="mr-2" href="#"><img class="w-10" src="images/logo.png" alt="dev board logo"></a>
                 <p class="text-2xl">Dev<span class="font-bold">Board</span></p>
@@ -36,15 +36,15 @@
               </div>
               <div class="dropdown dropdown-end">
                 <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                  <div class="w-10 rounded-full">
+                  <button class="theme-button w-10 rounded-full">
                     <img alt="background theme button" src="images/theme-btn.png" />
-                  </div>
+                  </button>
                 </div>
                </div> 
             </div>
         </div>
     </header>
-    <main class="flex justify-between pb-4">
+    <main class="flex justify-between">
         <!--Cards Section-->
         <section class="w-3/4 bg-white my-4 mr-3 rounded-lg">
             <div class="flex">
@@ -55,7 +55,7 @@
                         <p class="font-bold text-2xl">05</p>
                     </div>
                 </div>
-                <div class="bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] flex rounded-lg w-2/4 m-2 cursor-pointer">
+                <div class="goto-blog bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] flex rounded-lg w-2/4 m-2 cursor-pointer">
                     <img class="p-3" src="images/board.png" alt="board image">
                     <div class="py-8">
                         <p class="text-white">Discover something<br>new today!</p>
@@ -136,6 +136,9 @@
             <button class="btn text-white bg-[#3752FD] mb-5">Clear History</button>
         </section>
     </main>
+
+    <script src="scripts/bgcolor.js"></script>
+    <script src="scripts/buttons.js"></script>
 
 </body>
 </html>
