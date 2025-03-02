@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <!--Daisy UI CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    </style>
+</head>
+<body class="poppins-regular mx-20">
+    <header>
+        <!--Navbar-->
+        <div class="navbar bg-base-100 shadow-sm rounded-lg">
+            <div class="flex-1">
+                <a class="mr-2" href="#"><img class="w-10" src="images/logo.png" alt="dev board logo"></a>
+                <p class="text-2xl">Dev<span class="font-bold">Board</span></p>
+            </div>
+            <div class="flex-none">
+              <div class="btn flex mr-5">
+                <img class="mr-2" src="images/checkbox.png">
+                <h2 class="font-bold text-2xl">23</h2>
+              </div>
+              <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                  <div class="w-10 rounded-full">
+                    <img alt="background theme button" src="images/theme-btn.png" />
+                  </div>
+                </div>
+               </div> 
+            </div>
+        </div>
+    </header>
+    <main>
+        <!--Cards Section-->
+        <section class="w-3/4">
+            <div class="flex">
+                <div class="bg-[#F4F7FF] flex rounded-lg w-1/4 m-2">
+                    <img class="p-10" src="images/checkbox.png" alt="checkbox image">
+                    <div>
+                        <p>Task Assigned</p>
+                        <p class="font-bold text-2xl">05</p>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] flex rounded-lg w-2/4 m-2">
+                    <img class="p-3" src="images/board.png" alt="board image">
+                    <div>
+                        <p class="text-white">Discover something<br>new today!</p>
+                    </div>
+                </div>
+                <div class="bg-[#F4F7FF] flex rounded-lg w-1/4 m-2">
+                    <img class="p-10" src="images/calender.png" alt="calender image">
+                    <div>
+                        <p>Wed ,<br>Jul 28, 2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Task Cards-->
+            <div class="grid grid-cols-3">
+                <div class="bg-[#F4F7FF] rounded-lg m-3 p-3">
+                    <p><span class="bg-white p-1 rounded-lg">ShopEase</span></p>
+                    <h2 class="font-bold my-2">Fix Mobile Button Issue</h2>
+                    <p class="text-gray-500 bg-white rounded-lg p-1">Debug using Chrome DevTools, check for overlapping...</p>
+                    <div class="flex justify-between my-3">
+                        <h2>Deadline<br>25 March 2025</h2>
+                        <button class="btn bg-[#3752FD] text-white">Completed</button>
+                    </div>
+                </div>
+                <div class="bg-[#F4F7FF] rounded-lg m-3 p-3">
+                    <p><span class="bg-white p-1 rounded-lg">CloudSync</span></p>
+                    <h2 class="font-bold my-2">Add Dark Mode</h2>
+                    <p class="text-gray-500 bg-white rounded-lg p-1">Debug using Chrome DevTools, check for overlapping...</p>
+                    <div class="flex justify-between my-3">
+                        <h2>Deadline<br>25 March 2025</h2>
+                        <button class="btn bg-[#3752FD] text-white">Completed</button>
+                    </div>
+                </div>
+                <div class="bg-[#F4F7FF] rounded-lg m-3 p-3">
+                    <p><span class="bg-white p-1 rounded-lg">SwiftPlay</span></p>
+                    <h2 class="font-bold my-2">Optimize Homepage</h2>
+                    <p class="text-gray-500 bg-white rounded-lg p-1">Debug using Chrome DevTools, check for overlapping...</p>
+                    <div class="flex justify-between my-3">
+                        <h2>Deadline<br>25 March 2025</h2>
+                        <button class="btn bg-[#3752FD] text-white">Completed</button>
+                    </div>
+                </div>
+                <div class="bg-[#F4F7FF] rounded-lg m-3 p-3">
+                    <p><span class="bg-white p-1 rounded-lg">Meta</span></p>
+                    <h2 class="font-bold my-2">Add new Emoji</h2>
+                    <p class="text-gray-500 bg-white rounded-lg p-1">Debug using Chrome DevTools, check for overlapping...</p>
+                    <div class="flex justify-between my-3">
+                        <h2>Deadline<br>25 March 2025</h2>
+                        <button class="btn bg-[#3752FD] text-white">Completed</button>
+                    </div>
+                </div>
+                <div class="bg-[#F4F7FF] rounded-lg m-3 p-3">
+                    <p><span class="bg-white p-1 rounded-lg">GoogleLLC</span></p>
+                    <h2 class="font-bold my-2">Intrigate OpenAI API</h2>
+                    <p class="text-gray-500 bg-white rounded-lg p-1">Debug using Chrome DevTools, check for overlapping...</p>
+                    <div class="flex justify-between my-3">
+                        <h2>Deadline<br>25 March 2025</h2>
+                        <button class="btn bg-[#3752FD] text-white">Completed</button>
+                    </div>
+                </div>
+                <div class="bg-[#F4F7FF] rounded-lg m-3 p-3">
+                    <p><span class="bg-white p-1 rounded-lg">Glassdoor</span></p>
+                    <h2 class="font-bold my-2">Improve Job Searching</h2>
+                    <p class="text-gray-500 bg-white rounded-lg p-1">Debug using Chrome DevTools, check for overlapping...</p>
+                    <div class="flex justify-between my-3">
+                        <h2>Deadline<br>25 March 2025</h2>
+                        <button class="btn bg-[#3752FD] text-white">Completed</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Activity Log Section-->
+        <section class="w-1/4">
+
+        </section>
+    </main>
+
+</body>
+</html>
