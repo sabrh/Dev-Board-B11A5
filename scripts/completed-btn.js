@@ -19,10 +19,15 @@ const boardUpdate = (event) =>{
     const taskTitles = taskCard.querySelectorAll(".task");
 
     taskTitles.forEach(task => {
-        let currentTime=new Date();
-        let time=currentTime.getTime();
+        const currentTime=new Date();
+        const timeFormat=currentTime.toLocaleDateString('en-US' , {
+            hour:'2-digit',
+            minute:'2-digit',
+            hour12: true,
+
+});
         const logEntry = document.createElement("p");
-        logEntry.textContent = "You have completed the task "+task.innerText+" at "+ time;
+        logEntry.textContent = "You have completed the task "+task.innerText+" at "+ timeFormat;
 
         activityLog.appendChild(logEntry);
     });
