@@ -21,10 +21,10 @@
     }
     </style>
 </head>
-<body class="poppins-regular mx-20">
+<body class="poppins-regular px-20 bg-[#F4F7FF]">
     <header>
         <!--Navbar-->
-        <div class="navbar bg-base-100 shadow-sm rounded-lg">
+        <div class="navbar bg-base-100 shadow-sm rounded-lg mb-4">
             <div class="flex-1">
                 <a class="mr-2" href="#"><img class="w-10" src="images/logo.png" alt="dev board logo"></a>
                 <p class="text-2xl">Dev<span class="font-bold">Board</span></p>
@@ -44,26 +44,26 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="flex justify-between pb-4">
         <!--Cards Section-->
-        <section class="w-3/4">
+        <section class="w-3/4 bg-white my-4 mr-3 rounded-lg">
             <div class="flex">
                 <div class="bg-[#F4F7FF] flex rounded-lg w-1/4 m-2">
                     <img class="p-10" src="images/checkbox.png" alt="checkbox image">
-                    <div>
+                    <div class="py-5">
                         <p>Task Assigned</p>
                         <p class="font-bold text-2xl">05</p>
                     </div>
                 </div>
-                <div class="bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] flex rounded-lg w-2/4 m-2">
+                <div class="bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] flex rounded-lg w-2/4 m-2 cursor-pointer">
                     <img class="p-3" src="images/board.png" alt="board image">
-                    <div>
+                    <div class="py-8">
                         <p class="text-white">Discover something<br>new today!</p>
                     </div>
                 </div>
                 <div class="bg-[#F4F7FF] flex rounded-lg w-1/4 m-2">
                     <img class="p-10" src="images/calender.png" alt="calender image">
-                    <div>
+                    <div class="py-5">
                         <p>Wed ,<br>Jul 28, 2025</p>
                     </div>
                 </div>
@@ -128,8 +128,12 @@
             </div>
         </section>
         <!--Activity Log Section-->
-        <section class="w-1/4">
-
+        <section class="w-1/4 bg-white rounded-lg my-4 p-4 text-center">
+            <div class="flex my-5 justify-center text-center">
+                <img class="mr-3" src="images/activity.png">
+                <p>Activity Log</p>
+            </div>
+            <button class="btn text-white bg-[#3752FD] mb-5">Clear History</button>
         </section>
     </main>
 
